@@ -1,25 +1,17 @@
 /* Universal */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .container {
-  max-width: 900px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 15px;
-  flex: 1;
 }
 
-.info-section .container,
-.quote-section .container {
-  max-width: 900px;
-}
 
-.navbar,
-.header,
-.footer {
+.navbar, .header, .footer {
   background-color: #1f2937;
 }
 
@@ -51,9 +43,7 @@ ul li a {
 
 /* Header */
 
-.header {
-  min-width: 600px;
-}
+
 .header > .container {
   display: flex;
   justify-content: space-between;
@@ -88,7 +78,6 @@ ul li a {
 
 /* Info Section */
 .info-section {
-  height: 100%;
   margin: 25px 0;
 }
 .info-section h2 {
@@ -170,7 +159,7 @@ figcaption {
   padding: 50px 0px;
 }
 
-@media screen and (width <= 1000px) {
+@media screen and (width <= 1024px) {
   .header > .container {
     display: block;
     text-align: center;
@@ -201,7 +190,7 @@ figcaption {
   }
 }
 
-@media screen and (width <= 800px) {
+@media screen and (width <= 768px) {
   /* Info Section */
   .info-section {
     height: 100%;
@@ -221,7 +210,27 @@ figcaption {
     border-radius: 8px;
     border: 4px solid rgb(11, 171, 224);
   }
-  .info-section .box{
+  .info-section .box {
     align-items: center;
+  }
+}
+
+@media screen and (width <= 320px) {
+  .quote-section{
+    font-size: 1.5em;
+  }
+  .quote-section p{
+    text-align: justify;
+    padding: 16px;
+  }
+  figcaption{
+    text-align: center;
+  }
+  .signup-section .container{
+    display:block;
+    
+  }
+  .signup-section .container p{
+    padding:16px 0;
   }
 }
